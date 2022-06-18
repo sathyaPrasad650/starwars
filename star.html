@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--  -->
+    <style>
+      body {
+        background-image: url("https://media.istockphoto.com/photos/twinkling-star-field-overlay-texture-on-black-background-picture-id938050474?b=1&k=20&m=938050474&s=170667a&w=0&h=D2d9BnYsHXpkidikvqFi1-abDh7doWvatWEpUpzRNJU=");
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container {
+        margin: auto;
+        /* border: 2px solid red; */
+        width: 500px;
+        margin-top: 50px;
+        text-align: center;
+      }
+      .container img{
+        height: 300px;
+      }
+      .results{
+        background-color: white;
+        color: red;
+      }
+      p{
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1041px-Star_Wars_Logo.svg.png"
+        alt=""
+      />
+      <input type="text" id="query" oninput="debouncing(main, 1000)" />
+      <div id="results"></div>
+    </div>
+  </body>
+</html>
+
+<script src="main.js"></script>
